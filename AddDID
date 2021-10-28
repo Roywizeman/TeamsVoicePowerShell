@@ -1,0 +1,4 @@
+Import-Module MicrosoftTeams
+$userCredential = Get-Credential
+Connect-MicrosoftTeams -Credential $userCredential
+Set-CsOnlineVoiceUser -Identity user@domain.com -TelephoneNumber $null
